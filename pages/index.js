@@ -26,7 +26,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="fixed top-[90%] right-8">
-        toggle
+        click
       </button>
     </div>
   );
