@@ -1,25 +1,25 @@
 import Link from 'next/link';
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Main = () => {
 
-  const ExampleComponent = ({ darkMode }) => {
-    const [backgroundColor, setBackgroundColor] = useState('#fff');
-    const [textColor, setTextColor] = useState('#000');
+  // const ExampleComponent = ({ darkMode }) => {
+  //   const [backgroundColor, setBackgroundColor] = useState('#fff');
+  //   const [textColor, setTextColor] = useState('#000');
   
-    // Adjust styles based on dark mode state
-    if (darkMode) {
-      setBackgroundColor('#000');
-      setTextColor('#fff');
-    } else {
-      setBackgroundColor('#fff');
-      setTextColor('#000');
-    }
-  }
+  //   // Adjust styles based on dark mode state
+  //   if (darkMode) {
+  //     setBackgroundColor('#000');
+  //     setTextColor('#fff');
+  //   } else {
+  //     setBackgroundColor('#fff');
+  //     setTextColor('#000');
+  //   }
+  // }
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>

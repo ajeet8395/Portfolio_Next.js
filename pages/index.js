@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import { FiSun, FiMoon } from 'react-icons/fi';
 import {useTheme} from 'next-themes'
 
 
@@ -25,8 +26,8 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="fixed top-[90%] right-8">
-        click
+      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="fixed top-[90%] right-8 p-3 rounded-full">
+        {theme === 'dark' ? <FiSun /> : <FiMoon />}
       </button>
     </div>
   );
