@@ -36,7 +36,7 @@ const netflix = () => {
             management.
           </p>
           <a
-            href='https://github.com/fireclint/netflix-react-tailwind'
+            href='https://github.com/ajeet8395/Netflix-Landing-Page-Clone'
             target='_blank'
             rel='noreferrer'
           >

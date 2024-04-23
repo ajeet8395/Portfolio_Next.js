@@ -75,12 +75,13 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
-                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
+                action='https://api.web3forms.com/submit'
                 method='POST'
-                encType='multipart/form-data'
+                // encType='multipart/form-data'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
+                  <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc"/>
                     <label className='uppercase text-sm py-2 dark:text-gray-400'>Name</label>
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -123,6 +124,7 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
                 <button className='w-full p-4 text-gray-100 mt-4'>
                   Send Message
                 </button>
