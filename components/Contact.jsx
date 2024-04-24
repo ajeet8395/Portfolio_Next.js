@@ -29,10 +29,10 @@ const Contact = () => {
               <div>
                 <h2 className='py-2 dark:text-gray-300'>Ajeet Singh</h2>
                 <p className='dark:text-gray-400'>Front-End Developer</p>
-                <p className='py-4 dark:text-gray-400'>
+                {/* <p className='py-4 dark:text-gray-400'>
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
-                </p>
+                </p> */}
               </div>
               <div>
                 <p className='uppercase pt-8 dark:text-[#5651e5]'>Connect With Me</p>
