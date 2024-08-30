@@ -37,7 +37,7 @@ const Contact = () => {
               <div>
                 <p className='uppercase pt-8 dark:text-[#5651e5]'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
-                  <a
+                  <Link
                     href='https://www.linkedin.com/in/ajeet-singh-667143200/'
                     target='_blank'
                     rel='noreferrer'
@@ -45,8 +45,8 @@ const Contact = () => {
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
                       <FaLinkedinIn />
                     </div>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href='https://github.com/ajeet8395'
                     target='_blank'
                     rel='noreferrer'
@@ -54,17 +54,15 @@ const Contact = () => {
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
                       <FaGithub />
                     </div>
-                  </a>
+                  </Link>
 
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
                     <AiOutlineMail />
                   </div>
                   <Link href='/resume'>
-                    <a>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
                         <BsFillPersonLinesFill />
                       </div>
-                    </a>
                   </Link>
                 </div>
               </div>
@@ -134,14 +132,12 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <a>
               <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <HiOutlineChevronDoubleUp
                   className='text-[#5651e5]'
                   size={30}
                 />
               </div>
-            </a>
           </Link>
         </div>
       </div>

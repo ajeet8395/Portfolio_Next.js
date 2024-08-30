@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 
 const resume = () => {
   return (
@@ -19,20 +20,20 @@ const resume = () => {
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Ajeet Singh</h2>
           <div className="flex">
-            <a
+            <Link
               href="https://www.linkedin.com/in/ajeet-singh-667143200/"
               target="_blank"
               rel="noreferrer"
             >
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/ajeet8395"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
