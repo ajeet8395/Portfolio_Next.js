@@ -40,8 +40,7 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 dark:bg-gray-700'>
-        <Link href='/'>
-          <a className='w-16 h-16'>
+          <Link href='/' className='w-16 h-16'>
             {/* <FaDev className='w-full h-full'/> */}
             <Image
               src={logo}
@@ -49,8 +48,7 @@ const Navbar = () => {
               height='100'
               alt='/'
             />
-          </a>
-        </Link>
+          </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
@@ -101,14 +99,12 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <a>
                   <Image
                     src={NavLogo}
                     width='87'
                     height='35'
                     alt='/'
                   />
-                </a>
               </Link>
               <div
                 onClick={handleNav}
@@ -161,7 +157,7 @@ const Navbar = () => {
                 Let&#39;s Connect
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <a
+                <Link
                   href='https://www.linkedin.com/in/ajeet-singh-667143200/'
                   target='_blank'
                   rel='noreferrer'
@@ -169,8 +165,8 @@ const Navbar = () => {
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn />
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href='https://github.com/ajeet8395'
                   target='_blank'
                   rel='noreferrer'
@@ -178,7 +174,7 @@ const Navbar = () => {
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>
-                </a>
+                </Link>
                 <Link href='/#contact'>
                   <div
                     onClick={() => setNav(!nav)}

@@ -35,20 +35,20 @@ const netflix = () => {
             useContext hook is also being implemented for app-wide state
             management.
           </p>
-          <a
+          <Link
             href='https://github.com/ajeet8395/Netflix-Landing-Page-Clone'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-          </a>
-          <a
+          </Link>
+          <Link
             href='https://fireclint.github.io/netflix-react-tailwind/'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
-          </a>
+          </Link>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>

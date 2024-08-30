@@ -36,7 +36,7 @@ const Main = () => {
             integrating back-end technologies.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <a
+            <Link
               href='https://www.linkedin.com/in/ajeet-singh-667143200/'
               target='_blank'
               rel='noreferrer'
@@ -44,8 +44,8 @@ const Main = () => {
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-purple-700/40 dark:hover:shadow-md'>
                 <FaLinkedinIn />
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://github.com/ajeet8395'
               target='_blank'
               rel='noreferrer'
@@ -53,8 +53,8 @@ const Main = () => {
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-purple-700/40 dark:hover:shadow-md'>
                 <FaGithub />
               </div>
-            </a>
-            <Link href='/#contact'>
+            </Link>
+            <Link href='mailto:ajeetsi8395@gmail.com'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-purple-700/40 dark:hover:shadow-md'>
                 <AiOutlineMail />
               </div>
