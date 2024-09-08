@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import propertyImg from '../public/assets/projects/property.jpg';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import currconvt from '../public/assets/projects/currencyconvertor.png';
+import formbuilder from '../public/assets/projects/formbuilder.png';
+import netflixImg from '../public/assets/projects/netflix.jpg';
+import rockpaper from '../public/assets/projects/rockpaper.png';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -17,29 +17,33 @@ const Projects = () => {
         <h2 className='py-4 dark:text-gray-300'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
-            title='Property Finder'
-            backgroundImg={propertyImg}
-            projectUrl='/property'
-            tech='React JS'
+            title='Currency Convertor'
+            backgroundImg={currconvt}
+            projectUrl='https://ajeet8395.github.io/Currency-Convertor/'
+            projectCode='https://github.com/ajeet8395/Currency-Convertor'
+            tech='JavaScript'
           />
           <ProjectItem
-            title='Crypto App'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
-            tech='React JS'
+            title='Form builder Pro'
+            backgroundImg={formbuilder}
+            projectUrl='https://form-builder-pro-qosq.vercel.app/'
+            projectCode='https://github.com/ajeet8395/FormBuilderPro'
+            tech='Next JS'
 
           />
           <ProjectItem
             title='Netflix App'
             backgroundImg={netflixImg}
             projectUrl='/netflix'
+            projectCode='https://github.com/ajeet8395/Currency-Convertor'
             tech='React JS'
 
           />
           <ProjectItem
-            title='Twitch UI'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
+            title='Rock Paper Scissors'
+            backgroundImg={rockpaper}
+            projectUrl='https://ajeet8395.github.io/Rock-Paper-Scissors/'
+            projectCode='https://github.com/ajeet8395/Rock-Paper-Scissors'
             tech='Next JS'
 
           />
