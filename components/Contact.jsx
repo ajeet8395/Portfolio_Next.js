@@ -56,13 +56,15 @@ const Contact = () => {
                     </div>
                   </Link>
 
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
-                    <AiOutlineMail />
-                  </div>
+                  <Link href='mailto:ajeetsi8395@gmail.com'>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
                   <Link href='/resume'>
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
-                        <BsFillPersonLinesFill />
-                      </div>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-gray-300'>
+                      <BsFillPersonLinesFill />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -75,11 +77,11 @@ const Contact = () => {
               <form
                 action='https://api.web3forms.com/submit'
                 method='POST'
-                // encType='multipart/form-data'
+              // encType='multipart/form-data'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
-                  <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc"/>
+                    <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc" />
                     <label className='uppercase text-sm py-2 dark:text-gray-400'>Name</label>
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -122,7 +124,7 @@ const Contact = () => {
                     name='message'
                   ></textarea>
                 </div>
-                <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
                 <button className='w-full p-4 text-gray-100 mt-4'>
                   Send Message
                 </button>
@@ -132,12 +134,12 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <HiOutlineChevronDoubleUp
-                  className='text-[#5651e5]'
-                  size={30}
-                />
-              </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <HiOutlineChevronDoubleUp
+                className='text-[#5651e5]'
+                size={30}
+              />
+            </div>
           </Link>
         </div>
       </div>
