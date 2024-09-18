@@ -6,7 +6,7 @@ import AboutImg from '../public/assets/portuser.png';
 const About = () => {
   return (
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+      <div className='max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
             About
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className='m-auto shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300 dark:hover:shadow-purple-700/40'>
+        <div className='m-auto shadow-lg md:shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300 dark:hover:shadow-purple-700/40'>
           <Image src="/assets/portuser.png" width={350} height={350} className='rounded-xl' alt='/' />
         </div>
       </div>

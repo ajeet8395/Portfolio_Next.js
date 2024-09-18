@@ -50,23 +50,21 @@ const resume = () => {
           </div>
         </div>
         <p className="dark:text-gray-400">
-          I am an experienced web developer with a background in customer
-          service, team leadership, and organizational effectiveness. Skilled in
-          developing strategies, streamlining operations, and fostering
-          teamwork. Known for strong interpersonal abilities, problem-solving
-          skills, and a track record of optimizing efficiencies through critical
-          thinking and idea generation.
+          Innovative Frontend Web Developer with 1.7 years of experience in creating dynamic, user-centric
+          applications using ReactJS, JavaScript and modern frontend technologies. Skilled at translating designs into
+          responsive, high-performance interfaces. Dedicated to continuous learning and delivering cutting-edge
+          solutions that enhance user experience.
         </p>
 
         {/* Skills */}
         <div className="text-center py-4">
           <h5 className="text-center underline text-[18px] py-2 dark:text-gray-300">
-            Skills
+            Technical Skills
           </h5>
-          <p className="py-2 dark:text-gray-400">
-            <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>Front-End Web Developer
-            <span className="px-2">|</span> HTML
+          <p className="py-2 dark:text-gray-400 break-words">
+            {/* <span className="px-2 font-bold">Frontend</span> */}
+            <span className="px-2"></span>Front-End Web Developer
+            <span className="px-2">|</span>HTML
             <span className="px-2">|</span>CSS
             <span className="px-2">|</span>Javascript
             <span className="px-2">|</span>React.JS
@@ -76,10 +74,11 @@ const resume = () => {
             {/* <span className="px-2">|</span>Redux */}
             <span className="px-2">|</span>Tailwind
             <span className="px-2">|</span>Bootstrap
-            <span className="px-2">|</span>Chakra UI
+            {/* <span className="px-2">|</span>Chakra UI */}
             {/* <span className="px-2">|</span> Firebase */}
             <span className="px-2">|</span> RESTAPI
-            <span className="px-2">|</span> WordPress
+            <span className="px-2">|</span> Git
+            {/* <span className="px-2">|</span> WordPress */}
           </p>
           {/* <p className="py-2 dark:text-gray-400">
             <span className="font-bold">Amazon Web Services</span>
@@ -98,24 +97,19 @@ const resume = () => {
             <span className="px-2">|</span>Full Time
           </p>
           <p className="py-1 italic">
-          Web Developer (July 2024 - Current)
+            Web Developer (July 2023 - Aug 2024)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+              Built responsive web applications with React.js, JavaScript, GSAP, HTML5, CSS3.
             </li>
             <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
+              Worked with backend teams on API integration, improving performance and
+              cross-browser compatibility.
             </li>
             <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
+              Managed code versioning with Git/GitHub, contributing to Agile projects with a
+              focus on continuous integration and deployment.
             </li>
           </ul>
         </div>
@@ -131,15 +125,13 @@ const resume = () => {
           <p className="py-1 italic">React Developer (Jan 2024 - June 2024)</p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Developed responsive and user-friendly web applications using
-              React.js, contributing to the enhancement of client projects and
-              user experience.
+              Developed scalable e-commerce applications using React.js, Bootstrap, and
+              JavaScript, focusing on responsive design, performance optimization, and user
+              experience.
             </li>
             <li>
-              Collaborated closely with a team of developers and designers to
-              translate project requirements into elegant and efficient frontend
-              solutions, ensuring timely delivery and adherence to quality
-              standards.
+              Built a solid foundation in front-end development best practices, collaborative
+              teamwork and contributing to successful project delivery.
             </li>
             <li>
               Implemented modern frontend development practices, including
@@ -150,44 +142,75 @@ const resume = () => {
           </ul>
         </div>
 
-        {/*  */}
-        <h5 className="text-center underline text-[18px] py-4 dark:text-gray-300">
-          Other Professional Experience
-        </h5>
 
-        {/* Experience */}
+        {/* projects */}
+        <h5 className="text-center underline text-[18px] py-4 dark:text-gray-300">
+          Projects
+        </h5>
         <div className="py-6 dark:text-gray-400">
-          <p className="italic">
-            <span className="font-bold">CITY OF SHERMAN, TX</span>
-            <span className="px-2">|</span>Sherman, TX
+          <p className="italic font-bold">
+            Personal Portfolio Website
           </p>
-          <p className="py-1 italic">Paramedic / Firefighter (2010 – 2019)</p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
+              Designed and launched a personal portfolio website to highlight projects, skills, and expertise.
             </li>
             <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
+              Utilized Next.js for performance optimization and Tailwind CSS for a modern, responsive design.
             </li>
             <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
+              Created a visually appealing and user-friendly site to showcase professional expertise.
+            </li>
+          </ul>
+        </div>
+
+        <div className="py-6 dark:text-gray-400">
+          <p className="italic font-bold">
+            Weather Website
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed a real-time weather website using React.js and Tailwind CSS for a responsive, mobile-friendly
+              design.
             </li>
             <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
+              Integrated a weather API to dynamically fetch and display real-time weather data.
             </li>
             <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
+              Enhanced user experience with a modern UI and efficient data processing.
+            </li>
+          </ul>
+        </div>
+        <div className="py-6 dark:text-gray-400">
+          <p className="italic font-bold">
+            Form Builder Application
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed a customizable Form Builder for creating and designing custom forms with ease.
+            </li>
+            <li>
+              Implemented flexible input options such as email, password, dropdown, and multi-selectors.
+            </li>
+            <li>
+              Enabled form field customization for size and placement, enhancing the user experience.
+            </li>
+          </ul>
+        </div>
+        <div className="py-6 dark:text-gray-400">
+          <p className="italic font-bold">
+            Calculate Anything
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed a range of calculators such as basic, age, speed, and percentage calculators to meet diverse user
+              needs.
+            </li>
+            <li>
+              Displayed calculators as multiple interactive cards, allowing users to easily select the desired tool.
+            </li>
+            <li>
+              Implemented flexible algorithms to handle various calculations with precision and accuracy.
             </li>
           </ul>
         </div>
