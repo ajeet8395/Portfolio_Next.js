@@ -74,6 +74,7 @@ const resume = () => {
             {/* <span className="px-2">|</span>Redux */}
             <span className="px-2">|</span>Tailwind
             <span className="px-2">|</span>Bootstrap
+            <span className="px-2">|</span>Node.JS
             {/* <span className="px-2">|</span>Chakra UI */}
             {/* <span className="px-2">|</span> Firebase */}
             <span className="px-2">|</span> RESTAPI
