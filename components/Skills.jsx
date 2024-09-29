@@ -9,6 +9,8 @@ import Github from '../public/assets/skills/github1.png';
 import NextJS from '../public/assets/skills/nextjs.png'
 import Bootstrap from '../public/assets/skills/bootstrap.png'
 import WordPress from '../public/assets/skills/wordpress2.png'
+import Node from '../public/assets/skills/node.png';
+import MongoDB from '../public/assets/skills/mongo.png';
 
 const Skills = () => {
   return (
@@ -106,6 +108,26 @@ const Skills = () => {
               </div>
               <div className='flex flex-col items-center justify-center dark:text-gray-400'>
                 <h3>WordPress</h3>
+              </div>
+            </div>
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:hover:shadow-purple-700/40'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={Node} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center dark:text-gray-400'>
+                <h3>Node.js</h3>
+              </div>
+            </div>
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:hover:shadow-purple-700/40'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={MongoDB} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center dark:text-gray-400'>
+                <h3>MongoDB</h3>
               </div>
             </div>
           </div>
