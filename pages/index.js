@@ -26,7 +26,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="fixed top-[90%] right-8 p-3 rounded-full">
+      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="fixed top-[90%] right-8 p-3 rounded-full">
         {theme === 'dark' ? <FiSun /> : <FiMoon />}
       </button>
     </div>
