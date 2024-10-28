@@ -5,12 +5,12 @@ import { ThemeProvider } from "next-themes";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="dark:bg-gray-800">
-        <Navbar />
-        <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="dark">
+        <div className="dark:bg-gray-800">
+          <Navbar />
           <Component {...pageProps} />
-        </ThemeProvider>
-      </div>
+        </div>
+      </ThemeProvider>
     </>
   );
 }
