@@ -40,33 +40,39 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 dark:bg-gray-700'>
-          <Link href='/' className='w-16 h-16'>
-            {/* <FaDev className='w-full h-full'/> */}
-            <Image
-              src={logo}
-              width='100'
-              height='100'
-              alt='/'
-            />
-          </Link>
+        <Link href='/' className='w-16 h-16'>
+          {/* <FaDev className='w-full h-full'/> */}
+          <Image
+            src={logo}
+            width='100'
+            height='100'
+            alt='/'
+          />
+        </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
               <Link href='/#about'>About</Link>
             </li>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
-              <Link href='/resume'>Resume</Link>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1T7_oOGLhmoyw_OD12--tNKVAqQCDmJnj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </li>
-            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:border-red-700 ease-in-out dark:text-white'>
+            <li className='ml-10 pb-1 text-sm uppercase hover:border-b transition-all duration-200 delay-100 hover:font-bold ease-in-out dark:text-white'>
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
@@ -99,12 +105,12 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                  <Image
-                    src={NavLogo}
-                    width='87'
-                    height='35'
-                    alt='/'
-                  />
+                <Image
+                  src={NavLogo}
+                  width='87'
+                  height='35'
+                  alt='/'
+                />
               </Link>
               <div
                 onClick={handleNav}

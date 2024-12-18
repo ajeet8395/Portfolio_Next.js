@@ -1,25 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
-// import { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import TypingAnimation from './TypingAnimation';
 
 const Main = () => {
 
-  // const ExampleComponent = ({ darkMode }) => {
-  //   const [backgroundColor, setBackgroundColor] = useState('#fff');
-  //   const [textColor, setTextColor] = useState('#000');
-  
-  //   // Adjust styles based on dark mode state
-  //   if (darkMode) {
-  //     setBackgroundColor('#000');
-  //     setTextColor('#fff');
-  //   } else {
-  //     setBackgroundColor('#fff');
-  //     setTextColor('#000');
-  //   }
-  // }
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
@@ -28,9 +15,9 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700 dark:text-slate-300'>
-            Hi, I&#39;m <span className='text-[#5651e5]'> Ajeet Singh</span>
+            Hi, I&#39;m <span className=''> Ajeet Singh</span>
           </h1>
-          <h1 className='py-2 text-gray-700 dark:text-slate-300'>A Front-End Web Developer</h1>
+          <TypingAnimation/>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto dark:text-slate-500'>
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
