@@ -17,7 +17,7 @@ const Contact = () => {
         <h2 className='py-4 dark:text-gray-300'>Get In Touch</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+          <div className='col-span-3 lg:col-span-2 w-full h-full border border-[#5651e5] rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
               <div>
                 <Image
@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+          <div className='col-span-3 w-full h-auto border border-[#5651e5] rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://api.web3forms.com/submit'
@@ -84,7 +84,7 @@ const Contact = () => {
                     <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc" />
                     <label className='uppercase text-sm py-2 dark:text-gray-400'>Name</label>
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                       type='text'
                       name='name'
                     />
@@ -94,7 +94,7 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
+                      className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                       type='text'
                       name='phone'
                     />
@@ -103,7 +103,7 @@ const Contact = () => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2 dark:text-gray-400'>Email</label>
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                     type='email'
                     name='email'
                   />
@@ -111,7 +111,7 @@ const Contact = () => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2 dark:text-gray-400'>Subject</label>
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                     type='text'
                     name='subject'
                   />
@@ -119,13 +119,13 @@ const Contact = () => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2 dark:text-gray-400'>Message</label>
                   <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300'
+                    className='border-2 rounded-lg p-3 border-gray-300 text-black dark:text-white'
                     rows='10'
                     name='message'
                   ></textarea>
                 </div>
                 <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-                <button className='w-full p-4 text-gray-100 mt-4'>
+                <button className='w-full p-4 text-gray-100 mt-4 shadow-none'>
                   Send Message
                 </button>
               </form>
@@ -134,7 +134,7 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
               <HiOutlineChevronDoubleUp
                 className='text-[#5651e5]'
                 size={30}
