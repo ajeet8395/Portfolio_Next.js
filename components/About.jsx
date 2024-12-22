@@ -36,7 +36,7 @@ const About = () => {
           <img
             src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnlpNG1xdWlxanA3NnpmMzMwcDh1aXplcW01d3c3MDgzbTZwNjF3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif'
             alt='Programming GIF'
-            className='rounded-full'
+            className='rounded-full cursor-pointer hover:bg-[#5651e5] hover:shadow-xl'
           />
         </div>
       </div>

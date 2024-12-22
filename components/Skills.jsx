@@ -1,9 +1,5 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 import SkillCard from './SkillCard';
-import 'swiper/css';
-import 'swiper/css/autoplay';
 
 // Import all skill assets
 import Html from '../public/assets/skills/html.png';
@@ -41,33 +37,11 @@ const Skills = () => {
           Skills
         </p>
         <h2 className='py-4 dark:text-gray-300'>What I Can Do</h2>
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={5}
-          slidesPerView={1}
-          loop={true}
-          speed={300}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
-          }}
-          className='w-full py-8'
-        >
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
           {skills.map((skill, index) => (
-            <SwiperSlide key={index} className='py-4 px-2'>
-              <SkillCard name={skill.name} src={skill.src} />
-            </SwiperSlide>
+            <SkillCard key={index} name={skill.name} src={skill.src} />
           ))}
-        </Swiper>
+        </div>
       </div>
     </div>
   );

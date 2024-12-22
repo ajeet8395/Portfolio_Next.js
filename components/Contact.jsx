@@ -75,55 +75,52 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto border border-[#5651e5] rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
+                id='contact-form'
+                name='contact-form'
                 action='https://api.web3forms.com/submit'
                 method='POST'
+                className='flex flex-col space-y-5'
               // encType='multipart/form-data'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                  <div className='flex flex-col'>
-                    <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc" />
-                    <label className='uppercase text-sm py-2 dark:text-gray-400'>Name</label>
+                  <input type="hidden" name="access_key" value="24d8dfb7-5576-42bc-80cb-5396f40cd3fc" />
+                  <label className='uppercase text-sm dark:text-gray-400'>Name
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
+                      className='w-full border-2 mt-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                       type='text'
                       name='name'
                     />
-                  </div>
-                  <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2 dark:text-gray-400'>
-                      Phone Number
-                    </label>
+                  </label>
+                  <label className='uppercase text-sm dark:text-gray-400'>
+                    Phone Number
                     <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
+                      className='w-full border-2 mt-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                       type='text'
                       name='phone'
                     />
-                  </div>
+                  </label>
                 </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2 dark:text-gray-400'>Email</label>
+                <label className='uppercase text-sm dark:text-gray-400'>Email
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
+                    className='w-full border-2 mt-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                     type='email'
                     name='email'
                   />
-                </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2 dark:text-gray-400'>Subject</label>
+                </label>
+                <label className='uppercase text-sm dark:text-gray-400'>Subject
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
+                    className='w-full border-2 mt-2 rounded-lg p-3 flex border-gray-300 text-black dark:text-white'
                     type='text'
                     name='subject'
                   />
-                </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2 dark:text-gray-400'>Message</label>
+                </label>
+                <label className='uppercase text-sm dark:text-gray-400'>Message
                   <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300 text-black dark:text-white'
+                    className='w-full border-2 mt-2 rounded-lg p-3 border-gray-300 text-black dark:text-white'
                     rows='10'
                     name='message'
                   ></textarea>
-                </div>
+                </label>
                 <input type="hidden" name="redirect" value="https://web3forms.com/success" />
                 <button className='w-full p-4 text-gray-100 mt-4 shadow-none'>
                   Send Message
