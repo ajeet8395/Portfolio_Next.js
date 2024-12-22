@@ -24,20 +24,20 @@ const skills = [
   { name: 'Bootstrap', src: Bootstrap },
   { name: 'GitHub', src: Github },
   { name: 'Next.js', src: NextJS },
-  { name: 'WordPress', src: WordPress },
+  // { name: 'WordPress', src: WordPress },
   { name: 'Node.js', src: Node },
   { name: 'MongoDB', src: MongoDB },
 ];
 
 const Skills = () => {
   return (
-    <div id='skills' className='w-full lg:h-screen p-2'>
+    <div id='skills' className='w-full mb-40 p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Skills
         </p>
         <h2 className='py-4 dark:text-gray-300'>What I Can Do</h2>
-        <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
+        <div className='grid grid-cols-2 lg:grid-cols-5 gap-8'>
           {skills.map((skill, index) => (
             <SkillCard key={index} name={skill.name} src={skill.src} />
           ))}
