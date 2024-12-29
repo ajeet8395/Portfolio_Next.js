@@ -10,8 +10,7 @@ const About = () => {
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
         {/* Left Section */}
         <div className='md:col-span-2'>
-          <p className={headerStyle}>About</p>
-          <h2 className='py-4 dark:text-gray-300'>Who I Am</h2>
+          <h2 className='text-4xl font-bold tracking-widest text-[#5651e5]'>About</h2>
           <p className={textStyle}>
             I{`'`}m your front-end powerhouse, specializing in crafting mobile-friendly UIs that seamlessly integrate with backend systems. With a passion for learning and a knack for picking up new tech, I{`'`}m always ready to tackle whatever comes my way.
           </p>

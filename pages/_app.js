@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider attribute="class" defaultTheme="dark">
-        <div className="dark:bg-gray-800">
+        <div className="dark:bg-zinc-900">
           <Navbar />
           <Component {...pageProps} />
         </div>

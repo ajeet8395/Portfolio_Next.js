@@ -55,7 +55,7 @@ const ProjectsCarousel = ({ projects }) => {
   };
 
   return (
-    <div id="projects" className="w-full bg-gray-50 dark:bg-gray-900 py-16">
+    <div id="projects" className="w-full bg-gray-50 dark:bg-zinc-900 py-16">
       <div className="px-2">
         <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center">
           Projects

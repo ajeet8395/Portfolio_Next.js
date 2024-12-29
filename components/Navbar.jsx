@@ -1,14 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineHome } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillPersonLinesFill, BsFillInfoCircleFill } from 'react-icons/bs';
+import { RiSuitcaseFill } from 'react-icons/ri';
+import { MdOutlineContactPage } from 'react-icons/md';
+import { useTheme } from 'next-themes'
 import logo from '../public/assets/11602236_21004063-ezgif.com-crop.gif';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, setTheme } = useTheme()
 
   // Handle navbar positioning and shadow on scroll
   useEffect(() => {
@@ -23,15 +28,15 @@ const Navbar = () => {
   }, []);
 
   const linkData = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Skills', href: '/#skills' },
-    { name: 'Projects', href: '/#projects' },
+    { name: 'Home', href: '/', icon: <AiOutlineHome /> },
+    { name: 'About', href: '/#about', icon: <BsFillInfoCircleFill /> },
+    { name: 'Skills', href: '/#skills', icon: <RiSuitcaseFill /> },
+    { name: 'Projects', href: '/#projects', icon: <FaGithub /> },
     {
       name: 'Resume',
       href: 'https://drive.google.com/uc?export=download&id=1T7_oOGLhmoyw_OD12--tNKVAqQCDmJnj',
+      icon: <BsFillPersonLinesFill />,
     },
-    { name: 'Contact', href: '/#contact' },
   ];
 
   const socialLinks = [
@@ -83,11 +88,20 @@ const Navbar = () => {
             {linkData.map((link, index) => (
               <li
                 key={index}
-                className={`py-1 lg:py-3 text-[9px] md:text-sm uppercase hover:border-b transition-all duration-200 hover:font-bold ease-in-out text-white ${isScrolled ? 'hover:border-b-0' : ''}`}
+                className={`py-1 lg:py-3 ${isScrolled
+                  ? 'text-lg hover:scale-150 transition-transform'
+                  : 'text-[9px] md:text-sm uppercase '
+                  } 
+                transition-all duration-200 hover:font-bold ease-in-out text-white`}
               >
-                <Link href={link.href}>{link.name}</Link>
+                <Link href={link.href}>
+                  {isScrolled ? link.icon : link.name}
+                </Link>
               </li>
             ))}
+            <div onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="bg-[#5651e5] pt-3 text-white cursor-pointer shadow-none">
+              {theme === 'dark' ? <FiSun /> : <FiMoon />}
+            </div>
           </ul>
         </div>
       </div>

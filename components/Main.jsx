@@ -12,7 +12,7 @@ const Main = () => {
       className="w-full h-screen text-center relative dark:bg-cover dark:bg-center dark:bg-no-repeat dark:bg-fixed dark:bg-[url('../public/assets/home.jpg')]"
     >
       {/* Overlay for blue tint in dark mode */}
-      <div className="absolute inset-0 bg-transparent dark:bg-gray-900/30 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-transparent dark:bg-zinc-900/30 pointer-events-none"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">

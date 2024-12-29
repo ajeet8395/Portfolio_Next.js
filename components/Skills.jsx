@@ -1,45 +1,82 @@
-import React from 'react';
-import SkillCard from './SkillCard';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import SkillCard from './SkillCard'; // Your SkillCard component
 
-// Import all skill assets
-import Html from '../public/assets/skills/html.png';
-import Css from '../public/assets/skills/css.png';
-import Javascript from '../public/assets/skills/javascript.png';
-import ReactImg from '../public/assets/skills/react.png';
-import Tailwind from '../public/assets/skills/tailwind.png';
-import Github from '../public/assets/skills/github1.png';
-import NextJS from '../public/assets/skills/nextjs.png';
-import Bootstrap from '../public/assets/skills/bootstrap.png';
-import WordPress from '../public/assets/skills/wordpress2.png';
-import Node from '../public/assets/skills/node.png';
-import MongoDB from '../public/assets/skills/mongo.png';
+// Skills data
+const row1 = [
+  { name: 'HTML', src: '/assets/skills/html.png' },
+  { name: 'CSS', src: '/assets/skills/css.png' },
+  { name: 'JavaScript', src: '/assets/skills/javascript.png' },
+  { name: 'React', src: '/assets/skills/react.png' },
+  { name: 'Tailwind', src: '/assets/skills/tailwind.png' },
+];
 
-// Skill data
-const skills = [
-  { name: 'HTML', src: Html },
-  { name: 'CSS', src: Css },
-  { name: 'JavaScript', src: Javascript },
-  { name: 'React', src: ReactImg },
-  { name: 'Tailwind', src: Tailwind },
-  { name: 'Bootstrap', src: Bootstrap },
-  { name: 'GitHub', src: Github },
-  { name: 'Next.js', src: NextJS },
-  // { name: 'WordPress', src: WordPress },
-  { name: 'Node.js', src: Node },
-  { name: 'MongoDB', src: MongoDB },
+const row2 = [
+  { name: 'Node.js', src: '/assets/skills/node.png' },
+  { name: 'MongoDB', src: '/assets/skills/mongo.png' },
+  { name: 'Firebase', src: '/assets/skills/firebase.png' },
+  { name: 'AWS', src: '/assets/skills/aws.png' },
+  { name: 'Shopify', src: '/assets/skills/shopify.png' },
 ];
 
 const Skills = () => {
+  const row1Ref = useRef(null);
+  const row2Ref = useRef(null);
+
+  useEffect(() => {
+    // Function to handle animation
+    const animateRow = (ref, direction) => {
+      const container = ref.current;
+
+      // Clone the content for seamless looping
+      const clonedContent = container.innerHTML;
+      container.innerHTML += clonedContent;
+
+      // Animate
+      const animation = gsap.fromTo(
+        container,
+        { x: direction === 'left' ? 0 : '-50%' }, // Start position
+        {
+          x: direction === 'left' ? '-50%' : 0, // End position
+          duration: 15, // Adjust the speed of scrolling
+          ease: 'none',
+          repeat: -1, // Infinite loop
+        }
+      );
+
+      return () => {
+        animation.kill(); // Clean up on unmount
+      };
+    };
+
+    // Animate both rows
+    const cleanupRow1 = animateRow(row1Ref, 'left');
+    const cleanupRow2 = animateRow(row2Ref, 'right');
+
+    return () => {
+      cleanupRow1();
+      cleanupRow2();
+    };
+  }, []);
+
   return (
-    <div id='skills' className='w-full mb-40 p-2'>
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-          Skills
-        </p>
-        <h2 className='py-4 dark:text-gray-300'>What I Can Do</h2>
-        <div className='grid grid-cols-2 lg:grid-cols-5 gap-8'>
-          {skills.map((skill, index) => (
-            <SkillCard key={index} name={skill.name} src={skill.src} />
+    <div className="w-full mb-40 p-4 overflow-hidden">
+      <h2 className="text-center text-4xl font-bold mb-4 text-[#5651e5]">My Skills</h2>
+
+      {/* Row 1 */}
+      <div className="relative overflow-hidden h-20">
+        <div ref={row1Ref} className="flex gap-8">
+          {row1.map((skill, index) => (
+            <SkillCard key={`row1-${index}`} name={skill.name} src={skill.src} />
+          ))}
+        </div>
+      </div>
+
+      {/* Row 2 */}
+      <div className="relative overflow-hidden h-20">
+        <div ref={row2Ref} className="flex gap-8">
+          {row2.map((skill, index) => (
+            <SkillCard key={`row2-${index}`} name={skill.name} src={skill.src} />
           ))}
         </div>
       </div>
