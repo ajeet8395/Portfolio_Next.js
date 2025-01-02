@@ -56,14 +56,14 @@ const ProjectsCarousel = ({ projects }) => {
 
   return (
     <div id="projects" className="w-full bg-gray-50 dark:bg-zinc-900 py-16">
-      <div className="px-2">
+      <div className="px-4 lg:px-0">
         <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center">
           Projects
         </p>
-        <h2 className="py-4 dark:text-gray-300 text-center">What I&apos;ve Built</h2>
+        <h2 className="lg:py-4 dark:text-gray-300 text-center">What I&apos;ve Built</h2>
         
         <div 
-          className="relative h-[500px] w-full flex items-center justify-center overflow-hidden"
+          className="relative h-[450px] lg:h-[500px] w-full flex items-center justify-center overflow-hidden"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >

@@ -6,8 +6,8 @@ const About = () => {
   const headerStyle = 'uppercase text-xl tracking-widest text-[#5651e5]';
 
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-      <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
+    <div id='about' className='w-full md:h-screen p-2 px-4 lg:px-2 flex items-center py-16'>
+      <div className='max-w-[1240px] mx-auto flex flex-col-reverse md:grid md:grid-cols-3 gap-8'>
         {/* Left Section */}
         <div className='md:col-span-2'>
           <h2 className='text-4xl font-bold tracking-widest text-[#5651e5]'>About</h2>
@@ -35,7 +35,7 @@ const About = () => {
           <img
             src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnlpNG1xdWlxanA3NnpmMzMwcDh1aXplcW01d3c3MDgzbTZwNjF3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif'
             alt='Programming GIF'
-            className='rounded-full cursor-pointer hover:bg-[#5651e5] hover:shadow-xl'
+            className='rounded-full cursor-pointer hover:bg-[#5651e5] hover:shadow-xl w-72 h-72 md:w-96 md:h-96'
           />
         </div>
       </div>

@@ -84,7 +84,7 @@ const Navbar = () => {
         )}
 
         <div>
-          <ul className="flex space-x-3 md:space-x-8">
+          <ul className="flex space-x-6 md:space-x-8 px-2 py-1 lg:px-0 lg:py-0">
             {linkData.map((link, index) => (
               <li
                 key={index}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <div onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="bg-[#5651e5] pt-3 text-white cursor-pointer shadow-none">
+            <div onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="bg-[#5651e5] pt-[4.5px] md:pt-3 text-white cursor-pointer shadow-none">
               {theme === 'dark' ? <FiSun /> : <FiMoon />}
             </div>
           </ul>
