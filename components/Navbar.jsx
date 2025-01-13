@@ -91,7 +91,7 @@ const Navbar = () => {
         <motion.div
           onMouseMove={(e) => mouseX.set(e.pageX)}
           onMouseLeave={() => mouseX.set(Infinity)}
-          className="flex items-center gap-2 px-6 py-2 rounded-full border border-gray-200 dark:border-neutral-700 supports-backdrop-blur:bg-white/50 supports-backdrop-blur:dark:bg-black/50 backdrop-blur-md"
+          className="flex items-center lg:gap-2 px-2 lg:px-6 lg:py-2 rounded-full border border-gray-200 dark:border-neutral-700 supports-backdrop-blur:bg-white/50 supports-backdrop-blur:dark:bg-black/50 backdrop-blur-md"
         >
           {/* Home icon */}
           <IconContainer

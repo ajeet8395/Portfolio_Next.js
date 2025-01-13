@@ -67,7 +67,7 @@ const TypingAnimation = () => {
     return () => {
       masterTl.kill();
     };
-  }, []);
+  }, [jobTitles]);
 
   return (
     <h1
