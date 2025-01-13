@@ -60,8 +60,8 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="w-full mb-40 overflow-hidden">
-      <h2 className="text-center text-4xl font-bold mb-4 text-[#5651e5]">My Skills</h2>
+    <div id='skills' className="w-full my-28 overflow-hidden dark:bg-neutral-900">
+      <h2 className="text-center text-4xl font-bold mb-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500">My Skills</h2>
 
       {/* Row 1 */}
       <div className="relative overflow-hidden h-20">

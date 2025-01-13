@@ -36,7 +36,7 @@ const SkillCard = ({ name, src }) => {
   return (
     <div
       ref={cardRef}
-      className='flex items-center px-4 py-1 border border-[#5651e5] rounded-full 
+      className='flex items-center px-4 py-1 border border-[#5651e5]  rounded-full 
         bg-white dark:bg-zinc-900 cursor-pointer min-w-[200px]'
     >
       <div className='grid grid-cols-3 gap-3 justify-center items-center'>

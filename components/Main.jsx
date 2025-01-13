@@ -34,7 +34,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#5651e5] dark:hover:shadow-md">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#ff3366]/30 dark:hover:shadow-md">
                 <FaLinkedinIn />
               </div>
             </Link>
@@ -43,17 +43,17 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#5651e5] dark:hover:shadow-md">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#ff3366]/30 dark:hover:shadow-md">
                 <FaGithub />
               </div>
             </Link>
             <Link href="mailto:ajeetsi8395@gmail.com">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#5651e5] dark:hover:shadow-md">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#ff3366]/30 dark:hover:shadow-md">
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href="/resume">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#5651e5] dark:hover:shadow-md">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:text-white dark:hover:shadow-[#ff3366]/30 dark:hover:shadow-md">
                 <BsFillPersonLinesFill />
               </div>
             </Link>
