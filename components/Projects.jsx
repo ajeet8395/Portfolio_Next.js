@@ -8,6 +8,7 @@ import rockpaper from '../public/assets/projects/rockpaper.png';
 import diwali from '../public/assets/projects/diwali.png';
 import socket from '../public/assets/projects/socket.png';
 import videoCall from '../public/assets/projects/video.png';
+import apple from '../public/assets/projects/apple.png';
 
 const Projects = () => {
   const projects = [
@@ -38,6 +39,13 @@ const Projects = () => {
       projectUrl: 'https://video-call-flame-chi.vercel.app/',
       projectCode: 'https://github.com/ajeet8395/VideoCall',
       tech: 'Reactjs'
+    },
+    {
+      title: 'Apple ',
+      backgroundImg: apple,
+      projectUrl: 'https://iphone-website-eta.vercel.app/',
+      projectCode: 'https://github.com/ajeet8395/Iphone-Website',
+      tech: 'React.js GSAP'
     },
     {
       title: 'Form builder Pro',
